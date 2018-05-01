@@ -2,9 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import bgImage from "../images/background.png";
 import myImg from '../images/myImg.png';
-import FontAwesome from 'react-fontawesome'
 import { device } from '../utils/device';
-// import faStyles from 'font-awesome/css/font-awesome.css'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import github from '@fortawesome/fontawesome-free-brands/faGithub'
+import twitter from '@fortawesome/fontawesome-free-brands/faTwitter'
+import facebook from '@fortawesome/fontawesome-free-brands/faFacebook'
+import linkedin from '@fortawesome/fontawesome-free-brands/faLinkedin'
+import heart from '@fortawesome/fontawesome-free-solid/faHeart'
 
 const Container = styled.div`
   width: 100%;
@@ -16,7 +20,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 1.5rem;
-
 
   @media ${device.laptop} {  
     max-width: 40%;
@@ -32,8 +35,8 @@ const Box = styled.div`
 
 const ProfileImg = styled.div`
   margin: 0 auto;
-  width: 6rem;
-  height: 6rem;
+  width: 8rem;
+  height: 8rem;
   background-color: white;
   border-radius: 50%;
   background: url(${myImg});
@@ -48,7 +51,6 @@ const Name = styled.h3`
   margin-bottom: 1.2rem;
   color: #E0E0E0
 
-
   ;
 `
 const Identity = styled.p`
@@ -56,6 +58,7 @@ const Identity = styled.p`
  font-size: 1.1rem;
  margin-bottom: 0.5rem;
  color: #212121;
+ font-weight: bold;
 `
 
 const IconWrapper = styled.div`
@@ -66,19 +69,26 @@ const IconWrapper = styled.div`
   color: black;
   font-size: 1rem;
   color: #212121
+  margin-top: 2rem;
   ;
 `
-
 const Anchor = styled.a`
   text-decoration: none;
 `
 
-const Icon = styled.i`
+const Icon = styled.a`
   margin: 4rem 0.5rem 0rem 0.5rem;;
 `
 const Icons = props => (
     <Icon className={props.name} />
 )
+
+const Loved = styled.span`
+  margin: 1rem;
+  font-size: 0.7rem;
+  display: block;
+
+`
 
 export default () => (
   <Container>
@@ -88,25 +98,41 @@ export default () => (
       <Identity> Full Stack Javascript Developert </Identity>
       <Identity> Design Enthusiast </Identity>
       <Identity> Traveler </Identity>
-        
+
       <IconWrapper>
-         <a  href="https://www.github.com/munkhtegsh/" >
-          <Icons name="fab fa-github fa-lg" />
-         </a>
-
-         <a href="https://www.twitter.com/munkhtegsh">
-          <Icons name="fab fa-twitter fa-lg" />
-         </a>
-
-         <a href="https://www.facebook.com/munkhtegsh.m">
-           <Icons name="fab fa-facebook fa-lg" />
-         </a>
-
-         <a href="https://www.linkedin.com/in/munkhtegsh/">
-          <Icons name="fab fa-linkedin fa-lg" />
-         </a>
-
+        <a  href="https://www.github.com/munkhtegsh/" >
+          <Icon><FontAwesomeIcon icon={github} size="lg" /></Icon>
+        </a>
+        
+        <a href="https://www.twitter.com/munkhtegsh">
+          <Icon><FontAwesomeIcon icon={twitter} size="lg" /></Icon>
+        </a>
+        
+        <a href="https://www.facebook.com/munkhtegsh.m">
+          <Icon><FontAwesomeIcon icon={facebook}  size="lg"/></Icon>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/munkhtegsh/">
+          <Icon><FontAwesomeIcon icon={linkedin} size="lg" /></Icon>
+        </a>
       </IconWrapper>
+      <Loved> Crafted with <FontAwesomeIcon icon={heart} size="sm" style={{marginLeft: '0.3rem', marginRight: '0.3rem'}} /> 
+        using <a href="https://www.gatsbyjs.org" >GatsbyJS </a>
+        
+      </Loved>
+
     </Box>
   </Container>
 );
+
+
+// <FontAwesome
+// className="super-crazy-colors"
+// name="rocket"
+// size="2x"
+// spin
+// style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+// />
+
+
+

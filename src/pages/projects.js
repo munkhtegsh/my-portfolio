@@ -4,9 +4,11 @@ import recipystHome from '../images/app/recipyst.gif';
 
 const Projects = styled.div`
   padding: 1rem;
-  border-bottom: 1px solid green;
 `;
 const Title = styled.h4`
+  border-top: 1px solid green;
+  padding-top: 2.5rem;
+
   font-size: 1.2rem;
 `;
 

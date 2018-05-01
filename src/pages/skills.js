@@ -25,7 +25,7 @@ const Skills = styled.div`
   align-items: center;
   padding: 1rem;
   flex-wrap: wrap;
-  border-bottom: 1px solid green;
+  margin-bottom: 1rem;
 
 `;
 
@@ -57,7 +57,7 @@ const Icons = props => (
 
 export default () => (
   <div>
-    <Skills style={{  borderBottom: `1px solid green`, paddingBottom: `2.5rem`}}>
+    <Skills >
        <h4 style={{width: '100%', fontSize: '1.2rem'}}> MY SKILLS </h4>
       <Icons icon={javascript} name="javascript"/>
       <Icons icon={react} name="react"/>
@@ -78,5 +78,5 @@ export default () => (
       <Icons icon={sass} name="sass"/>
       <Icons icon={material} name="material" />
     </Skills>
-  </div>
+  </div>  
 );
