@@ -106,7 +106,7 @@ export default () => (
           <Icon href="https://www.facebook.com/munkhtegsh.m"><FontAwesomeIcon icon={facebook}  size="lg"/></Icon>
           <Icon href="https://www.linkedin.com/in/munkhtegsh/"><FontAwesomeIcon icon={linkedin} size="lg" /></Icon>
       </IconWrapper>
-      <Loved> Crafted with <FontAwesomeIcon  style={{marginLeft: '0.2rem', marginRight: '0.2rem'}}  icon={heart} size="xs"/> 
+      <Loved> Crafted with &#9829;
         using <a href="https://www.gatsbyjs.org" >GatsbyJS </a>
       </Loved>
 
