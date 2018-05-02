@@ -51,7 +51,6 @@ export default ({ children }) =>
     <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
       <h3 style={{ display: `inline` }}>SCOTT</h3>
     </Link>
-  */}
     <ul style={{ listStyle: `none`,  marginBottom: `0`, float: 'right'}}>
       <Link to="/" style={{ display: `inline-block`, marginRight: `1rem` }}>HOME</Link>
       <Link to="/about/" style={{ display: `inline-block`, marginRight: `1rem` }}>ABOUT</Link>
@@ -59,6 +58,8 @@ export default ({ children }) =>
       <Link to="/projects" style={{ display: `inline-block`, marginRight: `1rem` }}>PROJECTS</Link>
       <Link to="/contact/" style={{ display: `inline-block`, marginRight: `1rem` }}>CONTACT</Link>
     </ul>
+      */}
+
   </Header>
   {/* {children()} */}
   <HomePage />

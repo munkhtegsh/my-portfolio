@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 const Contact = styled.div`
   padding: 1rem;
-  padding-top: 2.5rem
+  padding-top: 2.5remxw
 
 `
 

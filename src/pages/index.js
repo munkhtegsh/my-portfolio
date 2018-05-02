@@ -66,6 +66,7 @@ const IconWrapper = styled.div`
   width: 80%;
   display: flex;
   justify-content: center;
+  align-items: center;
   color: black;
   font-size: 1rem;
   color: #212121
