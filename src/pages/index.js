@@ -86,7 +86,7 @@ const Icons = props => (
 
 const Loved = styled.span`
   margin: 1rem;
-  font-size: 0.7rem;
+  font-size: 0.7rem; 
   display: block;
 
 `
@@ -96,30 +96,18 @@ export default () => (
     <Box>
       <ProfileImg /> 
       <Name> MUNKHTEGSH MUNKHBAT </Name>
-      <Identity> Full Stack Javascript Developert </Identity>
+      <Identity> Full Stack Javascript Developer </Identity>
       <Identity> Design Enthusiast </Identity>
       <Identity> Traveler </Identity>
 
       <IconWrapper>
-        <a  href="https://www.github.com/munkhtegsh/" >
-          <Icon><FontAwesomeIcon icon={github} size="lg" /></Icon>
-        </a>
-        
-        <a href="https://www.twitter.com/munkhtegsh">
-          <Icon><FontAwesomeIcon icon={twitter} size="lg" /></Icon>
-        </a>
-        
-        <a href="https://www.facebook.com/munkhtegsh.m">
-          <Icon><FontAwesomeIcon icon={facebook}  size="lg"/></Icon>
-        </a>
-        
-        <a href="https://www.linkedin.com/in/munkhtegsh/">
-          <Icon><FontAwesomeIcon icon={linkedin} size="lg" /></Icon>
-        </a>
+          <Icon href="https://www.twitter.com/munkhtegsh"><FontAwesomeIcon icon={twitter} size="lg" /></Icon>
+          <Icon href="https://www.github.com/munkhtegsh/" ><FontAwesomeIcon icon={github} size="lg" /></Icon>
+          <Icon href="https://www.facebook.com/munkhtegsh.m"><FontAwesomeIcon icon={facebook}  size="lg"/></Icon>
+          <Icon href="https://www.linkedin.com/in/munkhtegsh/"><FontAwesomeIcon icon={linkedin} size="lg" /></Icon>
       </IconWrapper>
-      <Loved> Crafted with <FontAwesomeIcon icon={heart} size="sm" style={{marginLeft: '0.3rem', marginRight: '0.3rem'}} /> 
+      <Loved> Crafted with <FontAwesomeIcon  style={{marginLeft: '0.2rem', marginRight: '0.2rem'}}  icon={heart} size="xs"/> 
         using <a href="https://www.gatsbyjs.org" >GatsbyJS </a>
-        
       </Loved>
 
     </Box>
@@ -137,3 +125,20 @@ export default () => (
 
 
 
+
+// <a >
+// <Icon href="https://www.twitter.com/munkhtegsh"><FontAwesomeIcon icon={twitter} size="lg" /></Icon>
+// </a>
+
+// <a  href="https://www.github.com/munkhtegsh/" >
+// <Icon><FontAwesomeIcon icon={github} size="lg" /></Icon>
+// </a>
+
+
+// <a href="https://www.facebook.com/munkhtegsh.m">
+// <Icon><FontAwesomeIcon icon={facebook}  size="lg"/></Icon>
+// </a>
+
+// <a href="https://www.linkedin.com/in/munkhtegsh/">
+// <Icon><FontAwesomeIcon icon={linkedin} size="lg" /></Icon>
+// </a>
