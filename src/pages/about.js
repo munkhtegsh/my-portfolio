@@ -18,12 +18,15 @@ const Content = styled.p`
 `
 export default () => (
   <About>
-    <Greeting> GREETINGS! I am MUNKHTEGSH MUNKHBAT. </Greeting>
-
+    <Greeting> GREETINGS! I am Munkhtegsh Munkhbat. </Greeting>
     <Title> A little bit about me: </Title>
-    <Content> I’m originally from Mongolia and moved to SF in 2013 to finish my MBA. However,  the city changed my mind, specially after I watched Person of Interest TV series on Netflix, I decided to create an app that helps people and solves their problems. </Content>
+    <Content> I’m originally from Mongolia and moved to SF in 2013 to finish my MBA. 
+    However, the city opened my mind to new things and with the motivation of a Netflix TV series called "Person of Interest," I started my coding journey. 
+    I decided to focus on creating apps that helps people by solving their everyday problems. </Content>
     <Title> Developer: </Title>
-    <Content style={{  borderBottom: `1px solid green`, paddingBottom: `2.5rem`}}> I have extensive programming experience and I'm comfortable with developing frontend and backend. As an developer I constantly learning new technologies quick and apply them into my own projects. I love coding, solving problems and enjoy building web and mobile apps. </Content>
-    
+    <Content style={{borderBottom: `1px solid green`, paddingBottom: `2.5rem`}}> 
+    I have extensive programming experience and I'm comfortable with front-end and back-end development. 
+    As a developer, I'm constantly learning new tools and applying them into my own projects. 
+    Coding is my passion, I enjoy solving problems and I love building web and mobile apps. </Content>
   </About>
 );  
