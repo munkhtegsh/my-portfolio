@@ -28,6 +28,7 @@ const ProjectWrapper = styled.div`
 
 const Description = styled.p`
   max-width: 60%;
+  margin-bottom: 1rem;
   @media (min-width: 350px) {  
     max-width: 100%;
   }
