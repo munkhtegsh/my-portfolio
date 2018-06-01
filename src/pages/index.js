@@ -96,7 +96,7 @@ export default () => (
     <Box>
       <ProfileImg /> 
       <Name> MUNKHTEGSH MUNKHBAT </Name>
-      <Identity> Full Stack Javascript Developer </Identity>
+      <Identity> Full-Stack Javascript Developer </Identity>
       <Identity> Design Enthusiast </Identity>
       <Identity> Traveler </Identity>
 

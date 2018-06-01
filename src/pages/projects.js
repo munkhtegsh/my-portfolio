@@ -113,7 +113,7 @@ const GroupProject = props => (
 
 export default () => (
   <Projects>
-    <Title> Projects that I've worked {String.fromCharCode(58) }{String.fromCharCode(41) } </Title>
+    <Title> My Projects </Title>
     <GroupProject name="VShoppify" 
     tools="React | Redux | ES6 | Aframe | Watson-Conversation | Twilio | Parallax | Material-UI | Styled-Component | Node | Express | Massive | PostgreSQL | Socket.io | Auth0 | Nodemailer" 
     details="I really wanted to change the online shopping and came with the idea that brings Virtual Reality feeling for the users. I introduced my idea to my colleagues, they decided to create this awesome website with me. 
@@ -135,3 +135,5 @@ export default () => (
     landingPage={recipystHome} /> 
   </Projects>
 );
+
+// <Title> Projects that I've worked {String.fromCharCode(58) }{String.fromCharCode(41) } </Title>
