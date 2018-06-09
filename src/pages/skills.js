@@ -18,6 +18,8 @@ import html5 from '../images/icons/html5.svg';
 import css3 from '../images/icons/css3-color.svg';
 import sass from '../images/icons/sass.png';
 import material from '../images/icons/material-ui.svg';
+import vue from '../images/icons/vue.png';
+
 
 const Skills = styled.div`
   display: flex;
@@ -61,6 +63,9 @@ export default () => (
        <h4 style={{width: '100%', fontSize: '1.2rem'}}> MY SKILLS </h4>
       <Icons icon={javascript} name="javascript"/>
       <Icons icon={react} name="react"/>
+      
+      <Icons icon={vue} name="vue"/>
+      
       <Icons icon={redux} name="redux"/>
       <Icons icon={node} name="node"/>
       <Icons icon={express} name="express"/>

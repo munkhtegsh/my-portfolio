@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import bgImage from "../images/background.png";
-import myImg from '../images/myImg.png';
+import myImg from '../images/la.png';
 import { device } from '../utils/device';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import github from '@fortawesome/fontawesome-free-brands/faGithub'
@@ -11,6 +11,7 @@ import linkedin from '@fortawesome/fontawesome-free-brands/faLinkedin'
 import heart from '@fortawesome/fontawesome-free-solid/faHeart'
 
 const Container = styled.div`
+  padding-top: 1rem;
   width: 100%;
   text-align: center;
   height: 100vh;
@@ -20,6 +21,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 1.5rem;
+  box-sizing: border-box;
 
   @media ${device.laptop} {  
     max-width: 40%;
@@ -31,6 +33,8 @@ const Container = styled.div`
 
 const Box = styled.div`
   width: 100%;
+  padding: 1rem;
+  box-sizing: border-box
 `
 
 const ProfileImg = styled.div`
@@ -38,10 +42,11 @@ const ProfileImg = styled.div`
   width: 8rem;
   height: 8rem;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 50%
   background: url(${myImg});
   background-size: cover;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+
 
 `
 const Name = styled.h3`
@@ -70,7 +75,6 @@ const IconWrapper = styled.div`
   color: black;
   font-size: 1rem;
   color: #212121
-  margin-top: 2rem;
   ;
 `
 const Anchor = styled.a`
