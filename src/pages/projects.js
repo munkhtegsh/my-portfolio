@@ -63,6 +63,7 @@ const ScreenShot = styled.img`
   height: auto;
   border: 0.9px solid black; 
   margin-top: 40px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 8px 32px rgba(0, 0, 0, 0.12);
 
   @media (min-width: 350px) {  
     max-width: 100%;

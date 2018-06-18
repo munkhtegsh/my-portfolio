@@ -28,6 +28,7 @@ function CustomizedInputs(props) {
   return (
     <div lassName={classes.container}>
       <Button
+        type="submit"
         style={{marginLeft: 0, fontSize: '0.7rem'}} 
         variant="raised"
         color="primary"

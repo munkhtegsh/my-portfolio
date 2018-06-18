@@ -14,6 +14,7 @@ const Name = styled.input`
   padding: 0.5em;
   width: 47%;
   outline: none;
+  float: right;
 `;
 
 const Email= styled.input`
@@ -41,21 +42,20 @@ const Text = styled.textarea`
 const Wrapper = (props) => {
   return (
     <div>
-      <FlexContainer>  
-        <Name type="text" placeholder={props.name} name="name" onChange={(e) => props.handleInput(e, props.name)} /> 
-        <Email type="text" placeholder={props.email} name="email" onChange={(e) => props.handleInput(e, props.email)} />
+
+      <FlexContainer>
+      <form style={{width: '100%'}} method="POST" action="https://formspree.io/munkhtegsh.m@gmail.com">
+ 
+        <Email type="email" placeholder={props.email} name="email" onChange={(e) => props.handleInput(e, props.email)} />
+        <Name type="name" placeholder={props.name} name="name" onChange={(e) => props.handleInput(e, props.name)} />
+        <Text name="message" placeholder="Your message" onChange={(e) => props.handleInput(e, props.text)} /> 
+        <SubmitButton type="submit" onClick={() => props.submit()}/>
+        </form>
+
       </FlexContainer>
-      <Text name="text" onChange={(e) => props.handleInput(e, props.text)} />       
-      <SubmitButton onClick={() => props.submit()}/>
-    </div>
+     </div>
   ) 
 }
-
-const Submit = styled.button`
-  width: 15%;
-  margin-top: 0.5rem;
-  outline: none;
-`
 
 class Contact extends Component {
   constructor() {

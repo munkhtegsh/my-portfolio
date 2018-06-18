@@ -19,6 +19,8 @@ import css3 from '../images/icons/css3-color.svg';
 import sass from '../images/icons/sass.png';
 import material from '../images/icons/material-ui.svg';
 import vue from '../images/icons/vue.png';
+import gatsby from '../images/icons/gatsby.png';
+
 
 
 const Skills = styled.div`
@@ -50,6 +52,7 @@ const Icon = styled.img`
 const Name = styled.p`
   margin: 0;
 `
+
 const Icons = props => (
   <IconWrapper>
     <Icon src={props.icon} alt="" />
@@ -65,7 +68,8 @@ export default () => (
       <Icons icon={react} name="react"/>
       
       <Icons icon={vue} name="vue"/>
-      
+      <Icons icon={gatsby} name="gatsby"/>
+ 
       <Icons icon={redux} name="redux"/>
       <Icons icon={node} name="node"/>
       <Icons icon={express} name="express"/>
@@ -81,6 +85,8 @@ export default () => (
       <Icons icon={html5} name="html5"/>
       <Icons icon={css3} name="css3"/>
       <Icons icon={sass} name="sass"/>
+
+
       <Icons icon={material} name="material" />
     </Skills>
   </div>  
