@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const app = express();
+app.use(bodyParser.json());
 app.use(express.static(`${__dirname}/../public`));
 
 app.post('/contact', (req, res) => {
@@ -19,11 +20,11 @@ app.post('/contact', (req, res) => {
 
   // setup email data with unicode symbols
   let mailOptions = {
-      from: '"Susana Bayona" <coshka02@yahoo.com>', // sender address
+      from: `${req.body.name} ${req.body.email}` , // sender address  - '"Susana Bayona" <coshka02@yahoo.com>'
       to: 'munkhtegsh.m@gmail.com', // list of receivers
       subject: 'Hello ✔', // Subject line
-      text: 'This is the text', // plain text body
-      html: '<b>Hello world?</b>' // html body
+      text: `${req.body.text}`, // plain text body  - 'This is the text'
+      html: `<b> ${req.body.email} || ${req.body.text}</b>` // html body
   };
 
   // send mail with defined transport object

@@ -42,16 +42,13 @@ const Text = styled.textarea`
 const Wrapper = (props) => {
   return (
     <div>
-
       <FlexContainer>
-      <form style={{width: '100%'}} method="POST" action="https://formspree.io/munkhtegsh.m@gmail.com">
- 
+      <form style={{width: '100%'}} onSubmit={(e) => props.submit(e)}>
         <Email type="email" placeholder={props.email} name="email" onChange={(e) => props.handleInput(e, props.email)} />
         <Name type="name" placeholder={props.name} name="name" onChange={(e) => props.handleInput(e, props.name)} />
         <Text name="message" placeholder="Your message" onChange={(e) => props.handleInput(e, props.text)} /> 
-        <SubmitButton type="submit" onClick={() => props.submit()}/>
+        <SubmitButton type="submit" />
         </form>
-
       </FlexContainer>
      </div>
   ) 
@@ -73,9 +70,11 @@ class Contact extends Component {
     })
   }
 
-  submit() {
+  submit(e) {
+    e.preventDefault()
     axios.post('/contact', this.state);
   }
+
   render() {
     return (
     <ContactContainer>
@@ -86,7 +85,7 @@ class Contact extends Component {
         email="email"
         text="text" 
         handleInput={(e, name) => this.handleInput(e, name)}
-        submit={() => this.submit()}
+        submit={(e) => this.submit(e)}
       />
     </ContactContainer>
     )
