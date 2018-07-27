@@ -75,6 +75,7 @@ class Contact extends Component {
     swal("Your email successfully sent!", "I will get back to you shortly!", "success");
     e.preventDefault()
     axios.post('/contact', this.state);
+    this.setState({name: '', email: '', text: ''});
   }
 
   render() {
