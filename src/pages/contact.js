@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import styled from "styled-components";
 import SubmitButton from './submitButton';
 import axios from 'axios';
+import swal from 'sweetalert';
 // import FontAwesome from 'react-fontawesome'
 // import faStyles from 'font-awesome/css/font-awesome.css'
 
@@ -71,6 +72,7 @@ class Contact extends Component {
   }
 
   submit(e) {
+    swal("Your email successfully sent!", "I will get back to you shortly!", "success");
     e.preventDefault()
     axios.post('/contact', this.state);
   }
