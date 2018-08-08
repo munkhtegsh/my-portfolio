@@ -23,10 +23,10 @@ export default () => (
     <Content> Munkhtegsh Munkhbat is a multi-disciplinary technologist and Product Manager living in San Francisco, California. 
     I currently work as a freelancer and bring value to the projects by building, testing and deploying scalable, software products and UI features. 
     My passion is creating apps that helps people by solving their everyday problems. </Content>
-    <Title> Developer: </Title>
+    <Title> Experience: </Title>
     <Content style={{borderBottom: `1px solid green`, paddingBottom: `2.5rem`}}> 
-    I have extensive programming experience and I'm comfortable with front-end and back-end development. 
+    I have more than 5 years of Product Manager experience in abroad, plus extensive Full-Stack programming experience in development. 
     As a developer, I'm constantly learning new tools and applying them into my own projects. 
     Coding is my passion, I enjoy solving problems and I love building web and mobile apps. </Content>
   </About>
-);  
+); 
