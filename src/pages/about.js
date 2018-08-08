@@ -20,9 +20,9 @@ export default () => (
   <About>
     <Greeting> GREETINGS! I am Munkhtegsh Munkhbat. </Greeting>
     <Title> A little bit about me: </Title>
-    <Content> I’m originally from Mongolia and moved to SF in 2013 to finish my MBA. 
-    However, the city opened my mind to new things and with the motivation of a Netflix TV series called "Person of Interest," I started my coding journey. 
-    I decided to focus on creating apps that helps people by solving their everyday problems. </Content>
+    <Content> Munkhtegsh Munkhbat is a multi-disciplinary technologist and Product Manager living in San Francisco, California. 
+    I currently work as a freelancer and bring value to the projects by building, testing and deploying scalable, software products and UI features. 
+    My passion is creating apps that helps people by solving their everyday problems. </Content>
     <Title> Developer: </Title>
     <Content style={{borderBottom: `1px solid green`, paddingBottom: `2.5rem`}}> 
     I have extensive programming experience and I'm comfortable with front-end and back-end development. 
